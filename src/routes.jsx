@@ -5,6 +5,8 @@ import Contact from "./components/contacts";
 import Home from "./components/home";
 import Header from "./components/Header";
 import MainLayout from "./components/layouts/MainLayout";
+import PostComponent from "./components/posts";
+
 
 const Router = () => {
     return (
@@ -14,6 +16,7 @@ const Router = () => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="contact" element={<Contact />} />
+                <Route path="articles/:id" element={<PostComponent />} />
             </Routes>
             </MainLayout>
         </BrowserRouter>
